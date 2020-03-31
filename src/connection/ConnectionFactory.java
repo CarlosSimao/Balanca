@@ -10,11 +10,11 @@ import java.util.logging.Logger;
 
 public class ConnectionFactory {
 
-    private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
-    private static final String TIMEZONE = "america/sao_paulo";
-    private static final String URL = "jdbc:mysql://localhost:3306/BALANCA?useTimezone=true&serverTimezone=UTC";
-    private static final String USER = "root";
-    private static final String PASS = "DuoCBM123@";
+    //private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
+    private static final String DRIVER = "oracle.jdbc.driver.OracleDriver";
+    private static final String URL = "jdbc:oracle:thin:@192.168.0.124:1521/orcl";
+    private static final String USER = "sankhya";
+    private static final String PASS = "tecsis";
     
     public static Connection getConnection(){
         try {
